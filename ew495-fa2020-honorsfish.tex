@@ -1,15 +1,33 @@
-\documentclass[10pt]{article}
+\documentclass[twocolumn,10pt]{IEEEtran}
+
+\newcommand{\myroot}{.}
+\usepackage{wrcecapstone}
 
 \title{Bio-inspired flapping foil propulsion for enhanced maneuverability of unmanned underwater vehicles}
-\author{MIDN 1/C E Klatt and MIDN 1/C J Kenneally, III}
-\date{3 DEC 2020}
+\author{MIDN 1/C J Kenneally, III and MIDN 1/C E Klatt\thanks{Authors are with the Department of Weapons, Robotics, and Control Engineering at the United States Naval Academy. Addresses for correspondence \emph{m213402@usna.edu} and \emph{m213546@usna.edu}.}}
+\date{December 3, 2020}
 
-% Do not worry about any silling formatting of the title page etc I will take care of that - DE
+% For EW495 title page
+\usepackage{titlepage4956}
+\coursenumber{EW495}
+\student{MIDN 1/C J Kenneally, III and MIDN 1/C E Klatt}
+\advisor{Assistant Professor D. Evangelista}
+%\coverpicture{\includegraphics[height=1.88in]{\myroot/figures/problem-statement-1a.png}}
+
+% for IEEE style citations
+\bibliographystyle{IEEEtran}
+\usepackage[noadjust]{cite}
+
 \begin{document}
+%\maketitlepage
 \maketitle
 \begin{abstract}
     Abstract here. Evangelista can copy from the poster. 
 \end{abstract}
+
+\begin{IEEEkeywords}
+keywords here
+\end{IEEEkeywords}
 
 % for stuff from 502 you want me to add in just tell me what sections/pages from your 502 reports and I'll get them in here and then smooth them over
 
@@ -38,5 +56,18 @@ Fill in some verbage here.
 \subsection{Y may be a challenge in the spring}
 Fill in more verbage.
 
+\section*{Acknowledgements}
+
 % Don't worry about references at all I can handle that
+\bibliography{IEEEabrv,\myroot/references/honorsfish.bib}
+
+\begin{IEEEbiography}%
+[{\includegraphics[width=1in,height=1.25in,clip,keepaspectratio]{\myroot/figures/M213402.jpg}}]%
+{James Kenneally III} is a midshipman at the United States Naval Academy majoring in Robotics and Control Engineering (Honors). Upon graduation, he will do (service selection here). 
+\end{IEEEbiography}
+
+\begin{IEEEbiography}%
+[{\includegraphics[width=1in,height=1.25in,clip,keepaspectratio]{\myroot/figures/M213546.jpg}}]%
+{Evan L Klatt} is a midshipman at the United States Naval Academy majoring in Robotics and Control Engineering (Honors). Upon graduation, he will do (service selection here). 
+\end{IEEEbiography}
 \end{document}
