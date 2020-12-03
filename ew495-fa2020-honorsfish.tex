@@ -34,27 +34,64 @@ keywords here
 \section{Introduction}
 \subsection{Toy model}
 \subsection{3-axis test rig}
+The tethered test rig will be implemented next semester.  Utilizing the SURF in Hopper Hall, hardware experimentation will occur.  The goal of the test rig is to create a foil pattern for desired motion of the unmanned underwater vehicle.  Various phase angles will be tested to produce the desired angular movement of the UUV for low speed maneuverability.  Additionally, the results from experimentation will result in the compilation of a blending algorithm for seamless operation at low speed.  The algorithm will incorporate horizontal and vertical movement to ensure 3-axis functionality.  The ultimate goal is for the blending algorithm and the phase angle pattern is to enable low speed maneuverability of the UUV.  Low speed maneuverability enables recovery of UUVs and improved functionality in confined environments.  
+
 \subsection{Modeling of the base UUV}
-% If you want to use a figure provide me with .png or .jpg or whatever and I can put it in. For a table put it in comments and I can format for you. 
+% If you want to use a figure provide me with .png or .jpg or whatever and I can put it in. For a table put it in comments and I can format for you. _____ please attach some sketches from the folder, no need for a table
+The elementary version of the UUV will be a 4 inch diameter PVC pipe.  The pipe will be capped at the ends.  Utilizing blue foam, the fundamental UUV will be neutrally buoyant in water.  Neutral buoyancy will also need to incorporate the density of the servo motors and the Tetrix pieces used.  3D printed fish fins will attach to the UUV body by pieces of a Tetrix kit.  The Tetrix pieces will be attached to a servo motor to enable the fins to reach a desired phase angle for experimentation.  For the recreated fish fins, the current intention is to utilize resin printing to allow for flexibility in the fins to better mimic that found in fish.  The fin structure will be that of an ocean sunfish ("mola mola") or a triggerfish. 
+ 
 \subsection{Actuator designs}
 % Do you want me to use your sketches from your poster directory?
+include sketches from poster please
+Servo actuators will attach to the body of the UUV.  The actuators are connected to the fins by Tetrix pieces.  The fins will passively pop out and adjust its angular position to the desired phase angle sent to the servo.  Servos will receive desired angles from the mbed or raspberry pi to move the position of the fins to the phase angle.  
 
 \section{Methods and materials}
 \subsection{Toy model}
 Evangelista will copy from poster
 \subsection{3-axis test rig}
-
+The test rig will have a tethered power source.  This power source will also eliminate the need to hardcode the mbed or raspberry pi.  A tether power source will simplify data collection and streamline the experimentation process in order to complete more testing to obtain a larger pool of results.  Waterproof servos will attach to the UUV body.  Communicating using the raspberry pi or mbed, the servo will move the fish fin to the desired phase angle and the ensuing motion will be recorded via accelerometers and video footage.  The video will be analyzed in Matlab via the DLTviewer application.  To simplify testing, the rig will focus on a single plane.  Once mastery is achieved over a single plane, another plane will become the focus.  As experimentation of each plane is completed, results will be blended to create the algoithm motion.  Completed results will be analyzed to to identify the foil pattern for desired motion of the UUV. 
+%% please incorporate one of the images of the 3d printed fin
 \section{Results}
 \subsection{Toy model}
 Evangelista will copy from poster
 \subsection{3-axis test rig}
+There are no current results from the 3-axis test rig.  The intention is to get into the Hopper Hall SURF early in the spring to begin test rig.  Results for the test rig come in the form of 3D printed fins.  Due to COVID-19 restrictions, limited progress could be made in 3D printing fins.  Additionally, there was a need to relearn using Autodesk and Makerbot.  An elementary fin was printed, but details of dimensions need refined.  Moreover, the plastic material common for 3D printing creates a rigid structure inconsistent with the flexible material of fish fins.  To alleviate this inconsistency, the intention is to utilize resin material to print appropriately dimensioned fish fins mirroring the pectoral fins of the mola mola or triggerfish.
 
 \section{Discussion}
-\subsection{we learned X}
-Fill in some verbage here.
+\subsection{What We Learned}
+low speed definition
 
-\subsection{Y may be a challenge in the spring}
-Fill in more verbage.
+Neutral buoyancy
+Refamiliarize servos
+3D printing
+waterproofing hardware
+advance ratio
+bollard condition
+flexure
+representing fin in simulink
+vehicle dynamics
+
+
+\subsection{Challenges Going Forward}
+what we're trying to do
+
+Looking ahead to next semester, the goal is to apply fish fins to hardware UUVs.  
+
+Power supply in underwater environment
+
+effective implementation of fins to produce maneuverability data
+lab time limitations
+Sensing and compiling data
+
+Simulation challenges
+ thrust forces
+ drag coeffecients and considerations
+ control algorithm connecting fins to directionality
+ raspberry pi
+ 
+ 
+ 
+
 
 \section*{Acknowledgements}
 
