@@ -41,39 +41,22 @@ There are no current results from the 3-axis test rig.  The intention is to get 
 
 \section{Discussion}
 \subsection{What We Learned}
-low speed definition
+\subsection{Underwater Considerations}
+Throughout our research and simulation development this semester, we have learned about the complexities surrounding underwater vehicle modeling and experimentation. One of the first considerations for this project was that since we are looking to increase UUV maneuverability at low speeds, we would have to designate what exactly constitutes low speed. The advance ratio is a non-dimensional parameter that relates the speed of a vehicle through a fluid to the size and rotational speed of its propeller. We determined that an advance ratio under 0.35 would constitute low speed. Additionally, we looked into the possibility of bollard condition affecting our experimentation as fins complete the rowing motion.  At bollard condition, the speed of the UUV is approximately zero.  This ensures the fin use for directionality only, allowing the propeller to be the sole source of velocity.  The angle of attack of the fins will equal the angle the torpedo is holding at the bollard condition.  Developing a sound understanding of the bollard condition facilitates knowledge of the force generated from the flapping fins.  The net force for the fin is the power stroke force plus the recovery stroke force.  Because the force from the power stroke exceeds that of the recovery stroke, net force is in the direction of the power stroke.  The presence of lift and drag forces as a function of attack angle complicate the bollard condition and require more research for sound comprehension.  The bollard condition is applied to the toy sim will be useful for 3-axis hardware experimentation.  etc etc
 
-Neutral buoyancy
-Refamiliarize servos
-3D printing
-waterproofing hardware
-advance ratio
-bollard condition
-flexure
-representing fin in simulink
-vehicle dynamics
+We also could not assume neutral buoyancy as we can in modeling. As we develop our test rig, it is likely that the submerged volume and mass will change. We began planning for what would be the easiest way to achieve neutral buoyancy and came up with foam-filling as previously mentioned. 
+
+\subsection{Simulation}
+Simulating a UUV with fins is a complex process reliant on accurate, representative equations of the forces acting on vehicles underwater. Our project is primarily concerned with the effect of thrust forces on the UUV body created by fins. This requires a process of researching applicable drag coefficients, implementing equations, accounting for forces and moments, and determining which outputs will tell us the fins are adding maneuverability to the UUV. This is an ongoing process with plenty room for additional considerations and development.
+
+\subsection{Fin Design}
+The design of the fins for our project are inspired by the fins of the mentioned mola mola and triggerfish. We have been familiarizing ourselves with 3D printing and creating CAD files. However, an important attribute of fish fins is their ability to introduce flexure. Flexural stiffness in fins can affect the propulsive and agility capabilities of fish. Optimized stiffness typically result from non-uniform fin profiles with stiff leading edges. Achieving this in a 3D printed fin is difficult and has led us to resin printing. We hope to implement flexure in our test fins using its capabilities of adhesion control and increased precision. 
+
+
 
 
 \subsection{Challenges Going Forward}
-what we're trying to do
-
-Looking ahead to next semester, the goal is to apply fish fins to hardware UUVs.  
-
-Power supply in underwater environment
-
-effective implementation of fins to produce maneuverability data
-lab time limitations
-Sensing and compiling data
-
-Simulation challenges
- thrust forces
- drag coeffecients and considerations
- control algorithm connecting fins to directionality
- raspberry pi
- 
- 
- 
-
+Going forward next semester, we want to finish our UUV model and experimentally validate some of our findings through a 3-axis test rig. We want to determine whether our optimized fin designs and actuation holds up in testing. We also want to develop a control algorithm for our fin system that relates fin actuation to a desired direction. If we successfully develop this algorithm, we will be able to effect UUV movement in specified directions. This will make the UUV highly maneuverable. Simulation challenges include creating a control algorithm connecting fins to directional commands, accurate thrust calculation and finding appropriate drag coefficients. Experimental challenges include power supply in an underwater environment, effective implementation of fins to produce maneuverability data, COVID-related lab limitations, accurate sensing and adequate data compiling. 
 
 % Don't worry about references at all I can handle that
 \end{document}
